@@ -97,12 +97,13 @@ export interface Project {
   demo: string;
 }
 
+const base = import.meta.env.BASE_URL;
+
 export const projects: Project[] = [
   {
     id: "scraping-automation",
     title: "Web Scraping & Data Extraction Automation",
-    cover:
-      "./image_490a29.jpg",
+    cover: `${base}image_490a29.jpg`,
     summary:
       "A robust scraping framework that automates data collection from multiple sources with scheduling, retry logic, and export to structured formats.",
     problem:
@@ -112,17 +113,17 @@ export const projects: Project[] = [
     techStack: ["Python", "BeautifulSoup", "Requests", "Pandas", "Cron", "Linux"],
     gallery: [
       {
-        url: "./image_490a04.png",
+        url: `${base}image_490a04.png`,
         label: "Code",
         description: "Modular scraper architecture with configurable target definitions",
       },
       {
-        url: "./image_4909cb.png",
+        url: `${base}image_4909cb.png`,
         label: "Extracted Data (VS Code)",
         description: "Extracted data inspected directly in VS Code before export",
       },
       {
-        url: "./image_4909a7.png",
+        url: `${base}image_4909a7.png`,
         label: "Final Excel Sheet",
         description: "Final structured Excel export with validated, typed columns ready for analytics",
       },
@@ -133,8 +134,7 @@ export const projects: Project[] = [
   {
     id: "etl-pipeline",
     title: "Automated Data Cleaning & ETL Pipeline",
-    cover:
-      "./image_490324.png",
+    cover: `${base}image_490324.png`,
     summary:
       "An end-to-end ETL pipeline that ingests messy raw data, cleans and transforms it, and loads it into a structured warehouse with full audit logging.",
     problem:
@@ -144,22 +144,22 @@ export const projects: Project[] = [
     techStack: ["Python", "Pandas", "PostgreSQL", "Docker", "NumPy", "Git"],
     gallery: [
       {
-        url: "./image_4902a4.png",
+        url: `${base}image_4902a4.png`,
         label: "Raw Uncleaned Data",
         description: "Inconsistent regional exports with mixed formats and missing fields",
       },
       {
-        url: "./image_4902a8.png",
+        url: `${base}image_4902a8.png`,
         label: "ETL Code Script",
         description: "ETL orchestration script with stage-based transformation logic",
       },
       {
-        url: "./image_4902c0.png",
+        url: `${base}image_4902c0.png`,
         label: "Cleaned Data (CSV)",
         description: "Unified, validated dataset exported as clean CSV",
       },
       {
-        url: "./image_4902c4.png",
+        url: `${base}image_4902c4.png`,
         label: "Cleaned Data (Excel)",
         description: "Unified, validated data delivered as a structured Excel workbook",
       },
@@ -170,8 +170,7 @@ export const projects: Project[] = [
   {
     id: "sales-dashboard",
     title: "Interactive Sales Analytics Dashboard",
-    cover:
-      "./image_49022b.png",
+    cover: `${base}image_49022b.png`,
     summary:
       "A real-time interactive dashboard built with Streamlit and Plotly that visualizes sales KPIs with drill-down filters and exportable reports.",
     problem:
@@ -181,12 +180,12 @@ export const projects: Project[] = [
     techStack: ["Python", "Streamlit", "Plotly", "Pandas", "PostgreSQL", "SQL"],
     gallery: [
       {
-        url: "./image_48f763.png",
+        url: `${base}image_48f763.png`,
         label: "Dashboard Interface",
         description: "Interactive dashboard with KPI cards, trend lines, and regional heatmaps",
       },
       {
-        url: "./image_48f765.png",
+        url: `${base}image_48f765.png`,
         label: "Streamlit Code",
         description: "Streamlit app with Plotly chart definitions and filter callbacks",
       },
@@ -216,5 +215,4 @@ export const contact = {
   ],
 };
 
-export const profileImage =
-  "./profile-no-bg.png";
+export const profileImage = `${base}profile-no-bg.png`;
