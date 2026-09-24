@@ -10,6 +10,7 @@ import {
   Github,
   Linkedin,
   Briefcase,
+  Phone,
   type LucideIcon,
 } from "lucide-react";
 
@@ -205,8 +206,10 @@ export const aboutHighlights = [
 
 export const contact = {
   email: "mahmoudfayez4100@gmail.com",
+  phone: "+201000000000", // 👈 أكتب رقم هاتفك الحقيقي هنا (مع كود الدولة)
   socials: [
     { icon: Mail, label: "Email", href: "mailto:mahmoudfayez4100@gmail.com" },
+    { icon: Phone, label: "WhatsApp / Call", href: "https://wa.me/201503403134" }, // 👈 غيّر الرقم هنا أيضاً للواتساب
     { icon: Github, label: "GitHub", href: "https://github.com/mahmoudfayez" },
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/mahmoud10fayez" },
     { icon: Briefcase, label: "Upwork", href: "https://www.upwork.com" },
